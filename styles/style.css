@@ -13,13 +13,74 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  background-color: #f1f1f1;
+  display: flex;
+  position: relative;
   /* выше установили ограничения для секции */
+}
+
+.logo {
+  width: 183px;
+  height: 32px;
+  background-image: url(../images/logo_place_footer.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
+  color:black;
+}
+
+.logo_place_header {
+  position:absolute;
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+  width: 730px;
+  align-self: center;
+  margin-left: 64px;
+  z-index: 2;
+  line-height: 96px;
+  font-size: 102px;
+  font-style:oblique;
+}
+
+.header__subtitle {
+  width: 388px;
+  position:absolute;
+  left: 64px;
+  bottom: 30px;
+  line-height: 25px;
+  font-size: 18px;
+  font-style: normal;
+  z-index: 2;
+}
+
+.header__link {
+  color:#2f80ed;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position:absolute;
+  bottom: 0px;
+  right: 0px;
+  background-image: url(../images/header-image.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  z-index: 1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  position: absolute;
+  top: 64px;
+  right: 0px;
+  background-color: #2f80ed;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -28,4 +89,9 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.border {
+  border: 1px solid red;
+
 }
