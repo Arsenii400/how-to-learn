@@ -42,7 +42,7 @@
   z-index: 2;
   line-height: 96px;
   font-size: 102px;
-  font-style:oblique;
+  font-weight:bold;
 }
 
 .header__subtitle {
@@ -95,3 +95,45 @@
   border: 1px solid red;
 
 }
+
+.two-columns {
+  display: flex;
+  padding-top: 100px;
+  justify-content: space-between;
+  width: 80%;
+  margin:auto;
+}
+
+.two-columns__brief {
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-style: normal;
+  color:#2f80ed;
+}
+
+.two-columns__main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  min-width: 784px;
+  line-height:  34px;
+  font-size: 24px;
+  font-style: normal;
+}
+
+.two-columns__paragraph {
+  margin: 0;
+  padding: 0;
+}
+.two-columns__paragraph-middle {
+  padding: 30px 0;
+  margin: 0;
+}
+
+.two-columns__span-accent {
+  font-weight: bold;
+}
+
+
