@@ -149,6 +149,7 @@
 .table {
   width: 1100px;
   margin: 0 auto;
+  padding-top: 60px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -157,23 +158,26 @@
 .table__cell {
   width: 250px;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 .table__text {
+  margin: 0;
   padding-top: 20px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-}
-
-.table__bank {
-  padding-top: 20px;
+  padding-bottom: 0%;
 }
 
 .feynman {
