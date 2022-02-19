@@ -21,7 +21,6 @@
 
 .logo {
   width: 183px;
-  height: 32px;
   z-index: 2;
 }
 
@@ -29,6 +28,7 @@
   position:absolute;
   top: 30px;
   left: 64px;
+  height: 32px;
   background-image: url(../images/logo_place_header.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -37,11 +37,13 @@
 .header__title {
   width: 730px;
   align-self: center;
-  margin-left: 64px;
   z-index: 2;
   line-height: 96px;
   font-size: 102px;
   font-weight:bold;
+  margin: 0;
+  padding: 0;
+  margin-left: 64px;
 }
 
 .header__subtitle {
@@ -53,10 +55,13 @@
   font-size: 18px;
   font-style: normal;
   z-index: 2;
+  margin: 0;
+  padding: 0;
 }
 
 .header__link {
   color:#2f80ed;
+  text-decoration: none;
 }
 
 .header__main-illustration {
@@ -65,7 +70,6 @@
   position:absolute;
   bottom: 0px;
   right: 0px;
-  background-image: url(../images/header-image.png);
   background-size:contain;
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -82,14 +86,11 @@
   background-color: #2f80ed;
 }
 
-.border {
-  border: 1px solid red;
-
+.description {
+  padding-top: 100px;
 }
-
 .two-columns {
   display: flex;
-  padding-top: 100px;
   justify-content: space-between;
   width: 80%;
   margin:auto;
@@ -101,6 +102,8 @@
   font-size: 18px;
   font-style: normal;
   color:#2f80ed;
+  margin: 0;
+  padding: 0;
 }
 
 .two-columns__main-text {
@@ -115,8 +118,11 @@
 }
 
 .two-columns__paragraph {
-  margin: 0;
-  padding-bottom: 30px;
+  margin: 0 0 30px;
+}
+
+.two-columns__paragraph:last-of-type {
+  margin-bottom: 0;
 }
 
 .two-columns__span-accent {
@@ -124,7 +130,7 @@
 }
 
 .digits {
-  padding-top: 100px;
+  margin-top: 100px;
 }
 
 .section-title {
@@ -137,7 +143,7 @@
 }
 
 .section-subtitle {
-  padding-top: 60px;
+  margin-top: 20px;
   width: 60%;
   margin: 0 auto;
   text-align: center;
@@ -148,7 +154,7 @@
 
 .table {
   width: 1100px;
-  margin: 0 auto;
+  margin: 100px auto;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -174,19 +180,19 @@
 }
 
 .table__text {
-  margin: 0;
-  padding-top: 20px;
+  margin: 20px 0 0;
+  padding: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  padding-bottom: 0;
 }
 
 .feynman {
-  height: 890px;
-  padding-top: 100px;
+  min-height: 890px;
+  margin-top: 100px;
   position: relative;
   box-sizing: border-box;
+  background-color: #f2f2f2;
 }
 
 .feynman__title {
@@ -196,15 +202,18 @@
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
+  position: relative;
+  z-index: 1;
 }
 
 .feynman__subtitle {
-  padding-top: 70px;
-  margin: 0 auto;
+  margin: 70 auto 0;
   text-align: center;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  position: relative;
+  z-index: 1;
 }
 
 .feynman__link {
@@ -215,6 +224,7 @@
   font-size: 36px;
   font-weight: normal;
   color: #2f80ed;
+  text-decoration: none;
 
 }
 
@@ -224,7 +234,6 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  z-index: -1;
 }
 
 .kaufman {
@@ -232,7 +241,7 @@
   padding-top: 90px;
   padding-bottom: 90px;
   position: relative;
-  background-color: black;
+  background-color: #000000;
 }
 
 .section-title_theme_dark {
@@ -304,11 +313,14 @@
   width: 877px;
   height: 877px;
   z-index: 1;
+  background-image: url(../images/kaufman-triangle.svg);
 }
 
 .footer {
   min-height: 350px;
-  background-color: black;
+  background-color: #000000;
+  padding: 60px 0 40px;
+  box-sizing: border-box;
 }
 
 .footer__columns {
@@ -316,12 +328,11 @@
   flex-direction: row;
   justify-content: space-between;
   flex-basis: 711px;
-  padding: 60px auto 40px;
   margin: 0 auto;
   width: 90%;
 }
 
-.footer__columns_content_copyright {
+.footer__column_content_copyright {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -331,6 +342,7 @@
   background-image: url(../images/logo_place_footer.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  height: 35px;
 }
 
 .footer__author {
@@ -341,9 +353,9 @@
   color: white;
 }
 
-.footer__columns_content_info {
-  position: relative;
-  left: 20%;
+.footer__column_content_info {
+  position: absolute;
+  right: 30%;
 }
 
 .footer__column-links {
