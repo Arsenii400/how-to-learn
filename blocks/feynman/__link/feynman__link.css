@@ -7,4 +7,12 @@
   font-weight: normal;
   color: #2f80ed;
   text-decoration: none;
+  z-index: 2;
+  transition: opacity 0.5s linear;
 }
+
+.feynman__link:hover {
+  opacity: 0.4;
+  transition: opacity 0.1s linear;
+}
+
