@@ -3,4 +3,6 @@
   background-color: #1f1f1f;
   padding: 60px 0 40px;
   box-sizing: border-box;
+  display: flex;
+  align-items: stretch;
 }
