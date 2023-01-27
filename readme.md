@@ -10,6 +10,8 @@
 
 (Сайт не адаптирован для телефонов и планшетов)
 
+(Различия отображения в разных браузерах убраны с помошью normalize.css https://necolas.github.io/normalize.css/)
+
 (Для единообразия кода используется плагин Editor Config for VS Code: https://editorconfig.org/)
 
 #### Технологии
